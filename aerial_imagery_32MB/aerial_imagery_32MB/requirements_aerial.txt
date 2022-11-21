@@ -1,0 +1,4 @@
+patchify 
+segmentation-models
+opencv-python
+tensorflow
