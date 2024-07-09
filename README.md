@@ -1,1 +1,1 @@
-This repository includes 2 projects 
+This repository includes 2 of my pproject works
