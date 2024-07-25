@@ -7,4 +7,5 @@ ES assigns more weight to more recent observations, and less weight to older obs
 # Long Short Term Memory
 LSTM networks are an extension of RNN which are designed to handle long sequence of data patterns. LSTM's overcome the drawbacks suffered by RNN. A RNN network suffers from vanishing gradient problem. When the neural network back propagates, weights are being assigned to the gradients. As it proceeds to further timesteps, the gradients diminishes. LSTM's capture the temporal dependencies in the data and handles the vanishing gradients. 
 
-# Closing thoughts :
+# Closing thoughts 
+ARIMA / SARIMA fails to make accurate predictions on the stock price dataset because the dataset is left-skewed and it is non-stationary ( no constant mean, variance observed over different time periods ). Even differentiating did not help in accurate predictions. But a simple LSTM model captures the temporal dependencies and makes accurate predictions on the test dataset. While training the LSTM, the dataset was split using timeseries split from scikit-learn. Unlike the conventional way of splitting the dataset after random shuffling, the timeseries split maintains the temporal ordering of the data since the sequence of data points matter !
