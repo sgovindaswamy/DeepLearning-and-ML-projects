@@ -1,1 +1,2 @@
-This is a Readme file
+This project shows the Exploratory Data Analysis ( EDA ) performed on Ecommerce Sales Data
+
