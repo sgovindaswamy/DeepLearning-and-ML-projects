@@ -9,7 +9,9 @@ After reducing the dimensionality using dimensionality reduction technique such 
 3) One-class SVM
 4) Local outlier factor
 
-These algorithms displayed poor performance on the test set, however the Random forest classifier and AutoEncoders showed promising results with an F1 score of 78%
+These algorithms displayed poor performance on the test set even after performing hyperparameter tuning using Gridsearch CV.
+
+however the Random forest classifier and AutoEncoders showed promising results with an F1 score of 78%
 
 
 
