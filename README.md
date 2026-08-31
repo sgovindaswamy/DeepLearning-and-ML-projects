@@ -143,13 +143,40 @@ It is a strong example of practical applied AI across multiple domains and model
 
 ---
 
-## Suggested Next Steps
+## Quick Start
 
-- create a unified project dashboard linking all notebooks
-- add model performance tables for each project
-- include installation requirements and environment setup
-- connect notebooks to reproducible training pipelines
-- add deployment examples for select models
+1. Create a Python environment and install dependencies from [requirements.txt](requirements.txt)
+2. Review the project dashboard in [PROJECT_DASHBOARD.md](PROJECT_DASHBOARD.md)
+3. Follow the setup guide in [docs/SETUP.md](docs/SETUP.md)
+4. Open the notebook or script for the project you want to run
+5. Use the example deployment app in [deployment/stock_api_example.py](deployment/stock_api_example.py) as a template for API-based demos
+
+## Project Dashboard
+
+| Project | Task | Main Models | Key Metric |
+| --- | --- | --- | --- |
+| [Amazon_stock_price_prediction](Amazon_stock_price_prediction) | Stock forecasting | ARIMA, SARIMA, LSTM | MSE and temporal forecasting comparison |
+| [ecommerce_sales_data_analysis](ecommerce_sales_data_analysis) | Retail analytics | OLS regression, EDA | R-squared, correlation analysis |
+| [Natural_language_processing_job_description](Natural_language_processing_job_description) | Job description classification | AWD-LSTM + transfer learning | Accuracy |
+| [Predictive_maintenance_dataset](Predictive_maintenance_dataset) | Predictive maintenance | Isolation Forest, Random Forest, Autoencoder | F1 score |
+| [semantic_segmentation_of_aerial_imagery](semantic_segmentation_of_aerial_imagery) | Aerial image segmentation | U-Net | Mean IoU |
+
+## Environment Setup
+
+See [docs/SETUP.md](docs/SETUP.md) for:
+
+- Python version recommendations
+- environment creation commands
+- package installation instructions
+- project-specific notes
+
+## Reproducible Workflow
+
+Use [scripts/run_project_pipeline.py](scripts/run_project_pipeline.py) to print the recommended command sequence for each project and to keep the execution path consistent across notebooks and experiments.
+
+## Deployment Example
+
+A lightweight deployment example based on a simple stock trend API is available in [deployment/stock_api_example.py](deployment/stock_api_example.py). It demonstrates how a trained or heuristic model can be wrapped behind a REST endpoint for demo purposes.
 
 This repository serves as a broad portfolio of applied ML and DL projects demonstrating real-world problem solving with diverse datasets and model architectures.
 
